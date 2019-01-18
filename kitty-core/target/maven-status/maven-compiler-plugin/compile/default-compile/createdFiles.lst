@@ -1,0 +1,7 @@
+com\each\kittycore\service\CurdService.class
+com\each\kittycore\http\HttpStatus.class
+com\each\kittycore\page\PageResult.class
+com\each\kittycore\page\PageUtils.class
+com\each\kittycore\http\HttpResult.class
+com\each\kittycore\page\PageRequest.class
+com\each\kittycore\page\MybatisPageHelper.class

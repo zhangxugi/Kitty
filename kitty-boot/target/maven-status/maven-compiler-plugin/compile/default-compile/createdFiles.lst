@@ -1,0 +1,3 @@
+com\each\kittyboot\KittyBootApplication.class
+com\each\kittyboot\config\SwaggerConfig.class
+com\each\kittyboot\config\DruidConfig.class

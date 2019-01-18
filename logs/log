@@ -1,0 +1,481 @@
+[2019-01-18 14:31:46,036]-[INFO]:Starting KittyBootApplication on DESKTOP-LAFFRBR with PID 1492 (E:\Ideawork\kitty\kitty-boot\target\classes started by dell in E:\Ideawork\kitty\kitty-boot)   
+ [2019-01-18 14:31:46,038]-[INFO]:No active profile set, falling back to default profiles: default   
+ [2019-01-18 14:31:46,081]-[INFO]:Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3bb9a3ff: startup date [Fri Jan 18 14:31:46 CST 2019]; root of context hierarchy   
+ [2019-01-18 14:31:47,022]-[WARN]:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]   
+ [2019-01-18 14:31:47,029]-[INFO]:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.   
+ [2019-01-18 14:31:47,036]-[ERROR]:Application run failed   
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:236)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:710)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.each.kittyboot.KittyBootApplication.main(KittyBootApplication.java:12)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:659)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:519)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:208)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:189)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:128)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:297)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1013)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	... 15 more
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:641)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.ObjectMapper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 more
+[2019-01-18 14:35:14,994]-[INFO]:Starting KittyBootApplication on DESKTOP-LAFFRBR with PID 9116 (E:\Ideawork\kitty\kitty-boot\target\classes started by dell in E:\Ideawork\kitty\kitty-boot)   
+ [2019-01-18 14:35:14,995]-[INFO]:No active profile set, falling back to default profiles: default   
+ [2019-01-18 14:35:15,040]-[INFO]:Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5af3afd9: startup date [Fri Jan 18 14:35:15 CST 2019]; root of context hierarchy   
+ [2019-01-18 14:35:16,704]-[INFO]:Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7cdead49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)   
+ [2019-01-18 14:35:16,756]-[WARN]:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]   
+ [2019-01-18 14:35:16,762]-[INFO]:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.   
+ [2019-01-18 14:35:16,768]-[ERROR]:Application run failed   
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:236)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:710)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.each.kittyboot.KittyBootApplication.main(KittyBootApplication.java:12)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:659)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:519)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:208)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:189)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:128)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:297)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1013)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	... 15 more
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:641)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.ObjectMapper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 more
+[2019-01-18 14:42:33,049]-[INFO]:Starting KittyBootApplication on DESKTOP-LAFFRBR with PID 3472 (E:\Ideawork\kitty\kitty-boot\target\classes started by dell in E:\Ideawork\kitty\kitty-boot)   
+ [2019-01-18 14:42:33,050]-[INFO]:No active profile set, falling back to default profiles: default   
+ [2019-01-18 14:42:33,083]-[INFO]:Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5af3afd9: startup date [Fri Jan 18 14:42:33 CST 2019]; root of context hierarchy   
+ [2019-01-18 14:42:34,032]-[WARN]:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]   
+ [2019-01-18 14:42:34,038]-[INFO]:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.   
+ [2019-01-18 14:42:34,043]-[ERROR]:Application run failed   
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:236)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:710)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.each.kittyboot.KittyBootApplication.main(KittyBootApplication.java:12)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:659)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:519)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:208)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:189)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:128)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:297)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1013)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	... 15 more
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:641)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.ObjectMapper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 more
+[2019-01-18 14:43:54,537]-[INFO]:Starting KittyBootApplication on DESKTOP-LAFFRBR with PID 13700 (E:\Ideawork\kitty\kitty-boot\target\classes started by dell in E:\Ideawork\kitty\kitty-boot)   
+ [2019-01-18 14:43:54,538]-[INFO]:No active profile set, falling back to default profiles: default   
+ [2019-01-18 14:43:54,578]-[INFO]:Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@661972b0: startup date [Fri Jan 18 14:43:54 CST 2019]; root of context hierarchy   
+ [2019-01-18 14:43:55,613]-[WARN]:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]   
+ [2019-01-18 14:43:55,620]-[INFO]:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.   
+ [2019-01-18 14:43:55,625]-[ERROR]:Application run failed   
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:236)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:710)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.each.kittyboot.KittyBootApplication.main(KittyBootApplication.java:12)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.spring.web.ObjectMapperConfigurer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:659)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:519)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:208)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:189)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:128)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:297)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1013)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	... 15 more
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:641)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.ObjectMapper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 more
+[2019-01-18 14:57:38,108]-[INFO]:Starting KittyBootApplication on DESKTOP-LAFFRBR with PID 12784 (E:\Ideawork\kitty\kitty-boot\target\classes started by dell in E:\Ideawork\kitty\kitty-boot)   
+ [2019-01-18 14:57:38,109]-[INFO]:No active profile set, falling back to default profiles: default   
+ [2019-01-18 14:57:38,150]-[INFO]:Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67d48005: startup date [Fri Jan 18 14:57:38 CST 2019]; root of context hierarchy   
+ [2019-01-18 14:57:39,281]-[INFO]:Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ece02cbe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)   
+ [2019-01-18 14:57:40,258]-[INFO]:Tomcat initialized with port(s): 8088 (http)   
+ [2019-01-18 14:57:40,401]-[INFO]:Root WebApplicationContext: initialization completed in 2253 ms   
+ [2019-01-18 14:57:40,535]-[INFO]:Servlet statViewServlet mapped to [/druid/*]   
+ [2019-01-18 14:57:40,539]-[INFO]:Servlet dispatcherServlet mapped to [/]   
+ [2019-01-18 14:57:40,541]-[INFO]:Servlet statViewServlet mapped to [/druid/*]   
+ [2019-01-18 14:57:40,542]-[INFO]:Servlet statViewServlet was not registered (possibly already registered?)   
+ [2019-01-18 14:57:40,546]-[INFO]:Mapping filter: 'characterEncodingFilter' to: [/*]   
+ [2019-01-18 14:57:40,547]-[INFO]:Mapping filter: 'hiddenHttpMethodFilter' to: [/*]   
+ [2019-01-18 14:57:40,548]-[INFO]:Mapping filter: 'httpPutFormContentFilter' to: [/*]   
+ [2019-01-18 14:57:40,548]-[INFO]:Mapping filter: 'requestContextFilter' to: [/*]   
+ [2019-01-18 14:57:40,548]-[INFO]:Mapping filter: 'webStatFilter' to urls: [/*]   
+ [2019-01-18 14:57:40,548]-[INFO]:Filter webStatFilter was not registered (possibly already registered?)   
+ [2019-01-18 14:57:41,579]-[INFO]:Mapped "{[/menu/findPage],methods=[POST]}" onto public com.each.kittycore.http.HttpResult com.each.kittyadmin.controller.SysMenuController.findPage(com.each.kittycore.page.PageRequest)   
+ [2019-01-18 14:57:41,581]-[INFO]:Mapped "{[/user/findByUserId],methods=[GET]}" onto public java.lang.Object com.each.kittyadmin.controller.SysUserController.findByUserId(java.lang.Long)   
+ [2019-01-18 14:57:41,582]-[INFO]:Mapped "{[/user/findAll],methods=[GET]}" onto public java.lang.Object com.each.kittyadmin.controller.SysUserController.findAll()   
+ [2019-01-18 14:57:41,590]-[INFO]:Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()   
+ [2019-01-18 14:57:41,592]-[INFO]:Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()   
+ [2019-01-18 14:57:41,593]-[INFO]:Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()   
+ [2019-01-18 14:57:41,596]-[INFO]:Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)   
+ [2019-01-18 14:57:41,598]-[INFO]:Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)   
+ [2019-01-18 14:57:41,744]-[INFO]:Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]   
+ [2019-01-18 14:57:41,837]-[INFO]:Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]   
+ [2019-01-18 14:57:42,005]-[INFO]:Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67d48005: startup date [Fri Jan 18 14:57:38 CST 2019]; root of context hierarchy   
+ [2019-01-18 14:57:42,045]-[INFO]:Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]   
+ [2019-01-18 14:57:42,045]-[INFO]:Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]   
+ [2019-01-18 14:57:42,396]-[INFO]:Registering beans for JMX exposure on startup   
+ [2019-01-18 14:57:42,397]-[INFO]:Bean with name 'druid' has been autodetected for JMX exposure   
+ [2019-01-18 14:57:42,398]-[INFO]:Bean with name 'statFilter' has been autodetected for JMX exposure   
+ [2019-01-18 14:57:42,403]-[INFO]:Located MBean 'druid': registering with JMX server as MBean [com.alibaba.druid.pool:name=druid,type=DruidDataSource]   
+ [2019-01-18 14:57:42,408]-[INFO]:Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]   
+ [2019-01-18 14:57:42,411]-[INFO]:Starting beans in phase 2147483647   
+ [2019-01-18 14:57:42,638]-[INFO]:Tomcat started on port(s): 8088 (http) with context path ''   
+ [2019-01-18 14:57:42,647]-[INFO]:Started KittyBootApplication in 4.897 seconds (JVM running for 5.806)   
+ [2019-01-18 14:59:05,871]-[INFO]:FrameworkServlet 'dispatcherServlet': initialization started   
+ [2019-01-18 14:59:05,887]-[INFO]:FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms   
+ [2019-01-18 15:01:12,928]-[INFO]:Starting KittyBootApplication on DESKTOP-LAFFRBR with PID 2868 (E:\Ideawork\kitty\kitty-boot\target\classes started by dell in E:\Ideawork\kitty\kitty-boot)   
+ [2019-01-18 15:01:12,930]-[INFO]:No active profile set, falling back to default profiles: default   
+ [2019-01-18 15:01:12,968]-[INFO]:Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67d48005: startup date [Fri Jan 18 15:01:12 CST 2019]; root of context hierarchy   
+ [2019-01-18 15:01:14,069]-[INFO]:Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ece02cbe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)   
+ [2019-01-18 15:01:14,388]-[INFO]:Tomcat initialized with port(s): 8088 (http)   
+ [2019-01-18 15:01:14,506]-[INFO]:Root WebApplicationContext: initialization completed in 1540 ms   
+ [2019-01-18 15:01:14,603]-[INFO]:Servlet statViewServlet mapped to [/druid/*]   
+ [2019-01-18 15:01:14,605]-[INFO]:Servlet dispatcherServlet mapped to [/]   
+ [2019-01-18 15:01:14,606]-[INFO]:Servlet statViewServlet mapped to [/druid/*]   
+ [2019-01-18 15:01:14,606]-[INFO]:Servlet statViewServlet was not registered (possibly already registered?)   
+ [2019-01-18 15:01:14,608]-[INFO]:Mapping filter: 'characterEncodingFilter' to: [/*]   
+ [2019-01-18 15:01:14,609]-[INFO]:Mapping filter: 'hiddenHttpMethodFilter' to: [/*]   
+ [2019-01-18 15:01:14,609]-[INFO]:Mapping filter: 'httpPutFormContentFilter' to: [/*]   
+ [2019-01-18 15:01:14,609]-[INFO]:Mapping filter: 'requestContextFilter' to: [/*]   
+ [2019-01-18 15:01:14,609]-[INFO]:Mapping filter: 'webStatFilter' to urls: [/*]   
+ [2019-01-18 15:01:14,609]-[INFO]:Filter webStatFilter was not registered (possibly already registered?)   
+ [2019-01-18 15:01:15,414]-[INFO]:Mapped "{[/menu/findPage],methods=[POST]}" onto public com.each.kittycore.http.HttpResult com.each.kittyadmin.controller.SysMenuController.findPage(com.each.kittycore.page.PageRequest)   
+ [2019-01-18 15:01:15,417]-[INFO]:Mapped "{[/user/findAll],methods=[GET]}" onto public java.lang.Object com.each.kittyadmin.controller.SysUserController.findAll()   
+ [2019-01-18 15:01:15,418]-[INFO]:Mapped "{[/user/findByUserId],methods=[GET]}" onto public java.lang.Object com.each.kittyadmin.controller.SysUserController.findByUserId(java.lang.Long)   
+ [2019-01-18 15:01:15,421]-[INFO]:Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()   
+ [2019-01-18 15:01:15,422]-[INFO]:Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()   
+ [2019-01-18 15:01:15,422]-[INFO]:Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()   
+ [2019-01-18 15:01:15,425]-[INFO]:Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)   
+ [2019-01-18 15:01:15,426]-[INFO]:Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)   
+ [2019-01-18 15:01:15,522]-[INFO]:Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]   
+ [2019-01-18 15:01:15,587]-[INFO]:Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]   
+ [2019-01-18 15:01:15,773]-[INFO]:Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67d48005: startup date [Fri Jan 18 15:01:12 CST 2019]; root of context hierarchy   
+ [2019-01-18 15:01:15,811]-[INFO]:Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]   
+ [2019-01-18 15:01:15,811]-[INFO]:Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]   
+ [2019-01-18 15:01:16,147]-[INFO]:Registering beans for JMX exposure on startup   
+ [2019-01-18 15:01:16,148]-[INFO]:Bean with name 'druid' has been autodetected for JMX exposure   
+ [2019-01-18 15:01:16,149]-[INFO]:Bean with name 'statFilter' has been autodetected for JMX exposure   
+ [2019-01-18 15:01:16,154]-[INFO]:Located MBean 'druid': registering with JMX server as MBean [com.alibaba.druid.pool:name=druid,type=DruidDataSource]   
+ [2019-01-18 15:01:16,156]-[INFO]:Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]   
+ [2019-01-18 15:01:16,160]-[INFO]:Starting beans in phase 2147483647   
+ [2019-01-18 15:01:16,370]-[INFO]:Tomcat started on port(s): 8088 (http) with context path ''   
+ [2019-01-18 15:01:16,373]-[INFO]:Started KittyBootApplication in 3.816 seconds (JVM running for 4.715)   
+ [2019-01-18 15:02:03,012]-[INFO]:FrameworkServlet 'dispatcherServlet': initialization started   
+ [2019-01-18 15:02:03,031]-[INFO]:FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms   
+ [2019-01-18 15:14:26,446]-[ERROR]:Application run failed   
+ java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.yml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:549)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadForFileExtension(ConfigFileApplicationListener.java:500)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:468)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$null$6(ConfigFileApplicationListener.java:450)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$7(ConfigFileApplicationListener.java:449)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:446)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:336)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:215)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:198)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:185)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.each.kittyboot.KittyBootApplication.main(KittyBootApplication.java:12)
+Caused by: mapping values are not allowed here
+ in 'reader', line 14, column 10:
+          url: jdbc:mysql://localhost:3306/ma ... 
+             ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:872)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:360)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:557)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:84)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:123)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:547)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:139)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:75)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadDocuments(ConfigFileApplicationListener.java:567)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:523)
+	... 23 more
+[2019-01-18 15:14:40,056]-[ERROR]:Application run failed   
+ java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.yml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:549)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadForFileExtension(ConfigFileApplicationListener.java:500)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:468)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$null$6(ConfigFileApplicationListener.java:450)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$7(ConfigFileApplicationListener.java:449)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:446)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:336)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:215)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:198)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:185)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.each.kittyboot.KittyBootApplication.main(KittyBootApplication.java:12)
+Caused by: mapping values are not allowed here
+ in 'reader', line 14, column 10:
+          url: jdbc:mysql://localhost:3306/ma ... 
+             ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:872)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:360)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:557)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:84)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:123)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:547)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:139)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:75)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadDocuments(ConfigFileApplicationListener.java:567)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:523)
+	... 23 more
+[2019-01-18 15:14:48,825]-[ERROR]:Application run failed   
+ java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.yml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:549)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadForFileExtension(ConfigFileApplicationListener.java:500)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:468)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$null$6(ConfigFileApplicationListener.java:450)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$7(ConfigFileApplicationListener.java:449)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:446)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:336)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:215)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:198)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:185)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.each.kittyboot.KittyBootApplication.main(KittyBootApplication.java:12)
+Caused by: mapping values are not allowed here
+ in 'reader', line 14, column 10:
+          url: jdbc:mysql://localhost:3306/ma ... 
+             ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:872)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:360)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:557)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:84)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:123)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:547)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:139)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:75)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadDocuments(ConfigFileApplicationListener.java:567)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:523)
+	... 23 more
+[2019-01-18 15:15:06,642]-[INFO]:Starting KittyBootApplication on DESKTOP-LAFFRBR with PID 6572 (E:\Ideawork\kitty\kitty-boot\target\classes started by dell in E:\Ideawork\kitty\kitty-boot)   
+ [2019-01-18 15:15:06,644]-[INFO]:No active profile set, falling back to default profiles: default   
+ [2019-01-18 15:15:06,682]-[INFO]:Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6379eb: startup date [Fri Jan 18 15:15:06 CST 2019]; root of context hierarchy   
+ [2019-01-18 15:15:07,704]-[INFO]:Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$123e5771] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)   
+ [2019-01-18 15:15:08,108]-[INFO]:Tomcat initialized with port(s): 8088 (http)   
+ [2019-01-18 15:15:08,233]-[INFO]:Root WebApplicationContext: initialization completed in 1553 ms   
+ [2019-01-18 15:15:08,374]-[INFO]:Servlet statViewServlet mapped to [/druid/*]   
+ [2019-01-18 15:15:08,380]-[INFO]:Servlet dispatcherServlet mapped to [/]   
+ [2019-01-18 15:15:08,383]-[INFO]:Servlet statViewServlet mapped to [/druid/*]   
+ [2019-01-18 15:15:08,384]-[INFO]:Servlet statViewServlet was not registered (possibly already registered?)   
+ [2019-01-18 15:15:08,391]-[INFO]:Mapping filter: 'characterEncodingFilter' to: [/*]   
+ [2019-01-18 15:15:08,394]-[INFO]:Mapping filter: 'hiddenHttpMethodFilter' to: [/*]   
+ [2019-01-18 15:15:08,394]-[INFO]:Mapping filter: 'httpPutFormContentFilter' to: [/*]   
+ [2019-01-18 15:15:08,394]-[INFO]:Mapping filter: 'requestContextFilter' to: [/*]   
+ [2019-01-18 15:15:08,395]-[INFO]:Mapping filter: 'webStatFilter' to urls: [/*]   
+ [2019-01-18 15:15:08,395]-[INFO]:Filter webStatFilter was not registered (possibly already registered?)   
+ [2019-01-18 15:15:09,227]-[INFO]:Mapped "{[/menu/findPage],methods=[POST]}" onto public com.each.kittycore.http.HttpResult com.each.kittyadmin.controller.SysMenuController.findPage(com.each.kittycore.page.PageRequest)   
+ [2019-01-18 15:15:09,231]-[INFO]:Mapped "{[/user/findAll],methods=[GET]}" onto public java.lang.Object com.each.kittyadmin.controller.SysUserController.findAll()   
+ [2019-01-18 15:15:09,233]-[INFO]:Mapped "{[/user/findByUserId],methods=[GET]}" onto public java.lang.Object com.each.kittyadmin.controller.SysUserController.findByUserId(java.lang.Long)   
+ [2019-01-18 15:15:09,237]-[INFO]:Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()   
+ [2019-01-18 15:15:09,238]-[INFO]:Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()   
+ [2019-01-18 15:15:09,238]-[INFO]:Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()   
+ [2019-01-18 15:15:09,241]-[INFO]:Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)   
+ [2019-01-18 15:15:09,242]-[INFO]:Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)   
+ [2019-01-18 15:15:09,350]-[INFO]:Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]   
+ [2019-01-18 15:15:09,431]-[INFO]:Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]   
+ [2019-01-18 15:15:09,624]-[INFO]:Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6379eb: startup date [Fri Jan 18 15:15:06 CST 2019]; root of context hierarchy   
+ [2019-01-18 15:15:09,678]-[INFO]:Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]   
+ [2019-01-18 15:15:09,678]-[INFO]:Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]   
+ [2019-01-18 15:15:09,942]-[INFO]:Registering beans for JMX exposure on startup   
+ [2019-01-18 15:15:09,943]-[INFO]:Bean with name 'druid' has been autodetected for JMX exposure   
+ [2019-01-18 15:15:09,944]-[INFO]:Bean with name 'statFilter' has been autodetected for JMX exposure   
+ [2019-01-18 15:15:09,951]-[INFO]:Located MBean 'druid': registering with JMX server as MBean [com.alibaba.druid.pool:name=druid,type=DruidDataSource]   
+ [2019-01-18 15:15:09,953]-[INFO]:Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]   
+ [2019-01-18 15:15:09,957]-[INFO]:Starting beans in phase 2147483647   
+ [2019-01-18 15:15:10,156]-[INFO]:Tomcat started on port(s): 8088 (http) with context path ''   
+ [2019-01-18 15:15:10,162]-[INFO]:Started KittyBootApplication in 3.862 seconds (JVM running for 4.84)   
+ [2019-01-18 15:15:15,254]-[INFO]:FrameworkServlet 'dispatcherServlet': initialization started   
+ [2019-01-18 15:15:15,275]-[INFO]:FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms   
+ 
